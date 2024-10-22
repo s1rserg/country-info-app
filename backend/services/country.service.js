@@ -33,6 +33,7 @@ const getCountryInfo = async countryCode => {
   const flagUrl = flagResponse.data.data.flag;
 
   return {
+    name: countryInfo.commonName,
     borders: countryInfo.borders,
     populationData,
     flagUrl,

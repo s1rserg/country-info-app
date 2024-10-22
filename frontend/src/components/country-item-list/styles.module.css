@@ -1,0 +1,19 @@
+.country-list {
+  list-style: none;
+  padding: 0;
+}
+
+.country-item {
+  margin: 10px 0;
+}
+
+.country-link {
+  text-decoration: none;
+  color: #646cff;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.country-link:hover {
+  color: #3943ff;
+}

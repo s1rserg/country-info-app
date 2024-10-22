@@ -1,0 +1,11 @@
+.container {
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}

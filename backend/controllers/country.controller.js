@@ -5,12 +5,10 @@ const getAvailableCountries = async (req, res) => {
     const countries = await countryService.getAvailableCountries();
     res.status(200).json(countries);
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        error: 'Error fetching available countries',
-        message: error.message,
-      });
+    res.status(500).json({
+      error: 'Error fetching available countries',
+      message: error.message,
+    });
   }
 };
 
@@ -21,12 +19,10 @@ const getCountryInfo = async (req, res) => {
     const countryInfo = await countryService.getCountryInfo(countryCode);
     res.status(200).json(countryInfo);
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        error: 'Error fetching country information',
-        message: error.message,
-      });
+    res.status(500).json({
+      error: 'Error fetching country information',
+      message: error.message,
+    });
   }
 };
 
