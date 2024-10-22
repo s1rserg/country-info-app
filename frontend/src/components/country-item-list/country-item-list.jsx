@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const CountryItemList = ({ countries }) => {
-  console.log(countries.length > 0)
   return (
     <ul className={styles['country-list']}>
       {countries.length > 0 ? (
