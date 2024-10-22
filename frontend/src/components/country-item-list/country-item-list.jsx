@@ -8,7 +8,10 @@ const CountryItemList = ({ countries }) => {
       {countries.length > 0 ? (
         countries.map(country => (
           <li key={country.countryCode} className={styles['country-item']}>
-            <Link to={`/countries/${country.countryCode}`} className={styles['country-link']}>
+            <Link
+              to={`/countries/${country.countryCode}`}
+              className={styles['country-link']}
+            >
               {country.name || country.commonName}
             </Link>
           </li>
@@ -25,7 +28,7 @@ CountryItemList.propTypes = {
     PropTypes.shape({
       countryCode: PropTypes.string.isRequired,
       commonName: PropTypes.string,
-      name: PropTypes.string
+      name: PropTypes.string,
     })
   ).isRequired,
 };
